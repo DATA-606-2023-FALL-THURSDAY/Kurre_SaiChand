@@ -1,4 +1,4 @@
-<p align ="center"> **Breast Cancer Predection** </p>
+# <p align ="center"> Breast Cancer Predection </p>
 ##  Title and Author
 - Project Title - Breast Cancer Predection
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
@@ -12,7 +12,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="BreastCancer_Awareness.jpg" alt="Breast Cancer Awareness" width="200">
+    <img src="BreastCancer_Awareness.jpg" alt="Breast Cancer Awareness" width="300">
     </p>
 </div> 
 
@@ -26,7 +26,7 @@ With image processing techniqes or manual measurements, cell charateristics are 
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="CancerFacts.jpg" alt="Facts About Cancer" width="200">
+    <img src="CancerFacts.jpg" alt="Facts About Cancer" width="300">
     </p>
 </div> 
 
