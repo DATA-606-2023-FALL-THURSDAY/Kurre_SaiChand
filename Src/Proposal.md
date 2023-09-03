@@ -12,7 +12,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="BreastCancer_Awareness.jpg" alt="Breast Cancer Awareness" width="300">
+    <img src="BreastCancer_Awareness.jpg" alt="Breast Cancer Awareness" width="400">
     </p>
 </div> 
 
@@ -25,7 +25,7 @@ Cell characteristics are measured from Fine Needle aspiration images using image
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="CancerFacts.jpg" alt="Facts About Cancer" width="300">
+    <img src="CancerFacts.jpg" alt="Facts About Cancer" width="400">
     </p>
 </div> 
 
