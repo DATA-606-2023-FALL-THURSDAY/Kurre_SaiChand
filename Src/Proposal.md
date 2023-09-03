@@ -3,7 +3,7 @@
 - Project Title - Breast Cancer Predection
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 - Author - Kurre Sai Chand
-- Author's GitHub profile - 
+- Author's GitHub profile - https://github.com/saichandkurre
 - Author's LinkedIn profile - www.linkedin.com/in/sai-chand-kurre
 - PowerPoint presentation file -
 - YouTube video -
