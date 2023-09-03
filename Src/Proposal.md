@@ -4,7 +4,7 @@
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 - Author - Kurre Sai Chand
 - Author's GitHub profile - 
-- Author's LinkedIn progile - 
+- Author's LinkedIn profile - www.linkedin.com/in/sai-chand-kurre
 - PowerPoint presentation file -
 - YouTube video -
 ##  Background
