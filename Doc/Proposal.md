@@ -38,8 +38,8 @@
 - **Data Shape** : Our Data Set consists of 570 rows and 33 columns
 - Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
 - **Data Dictionary** :
-- 1) ID number
-- 2) Diagnosis (M = malignant, B = benign)
+- 1 ID number
+- 2 Diagnosis (M = malignant, B = benign)
 - 3-33) Ten real-valued features are computed for each cell nucleus:
     - a) radius (mean of distances from center to points on the perimeter)
     - b) texture (standard deviation of gray-scale values)
