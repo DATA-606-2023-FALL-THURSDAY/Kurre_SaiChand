@@ -32,3 +32,25 @@
 - Can we develop a predictive model that accurately classifies tumors as malignant (M) or benign (B) based on the given features (radius_mean, texture_mean, perimeter_mean, etc.)?
 - Are there any strong correlations between pairs of features?
 
+## Data
+- **Data Source** : The data is found from UCI Machine Learning Repository https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+- **Data Size** : size of our data is 128 KB
+- **Data Shape** : Our Data Set consists of 570 rows and 33 columns
+- Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
+- **Data Dictionary** :
+- 1) ID number
+- 2) Diagnosis (M = malignant, B = benign)
+- 3-33) Ten real-valued features are computed for each cell nucleus:
+    - a) radius (mean of distances from center to points on the perimeter)
+    - b) texture (standard deviation of gray-scale values)
+    -  c) perimeter
+    - d) area
+    - e) smoothness (local variation in radius lengths)
+    - f) compactness (perimeter^2 / area - 1.0)
+    - g) concavity (severity of concave portions of the contour)
+    - h) concave points (number of concave portions of the contour)
+    - i) symmetry
+    - j) fractal dimension
+- The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 columns.
+- id is of datatype int64, diagnosis is of data type object and the rest of other 30 parameters are of Float64.
+- **Target For ML Model** : Diagnosis
