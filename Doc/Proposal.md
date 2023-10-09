@@ -54,3 +54,52 @@
 - The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 columns.
 - id is of datatype int64, diagnosis is of data type object and the rest of other 30 parameters are of Float64.
 - **Target For ML Model** : Diagnosis
+## 4. Exploratory Data Analysis (EDA)
+ ### 4.1 Data Cleaning 
+  #### 4.1.1 Dropping the unwanted columns
+- In the DataFrame we have 1 columns they are Unnamed: 32.  
+- Unnamed: 32 is the unwanted columns so that is deleted.
+
+#### 4.1.2 Checking & removing the duplicate rows from DataFrame
+- We have checked whether any 2 columns have the same value but there are none. Checking the duplicate rows in the DataFrame. It is observed that there are no multiple rows
+
+ ### 4.2 visualization
+- Box Plot for value counts of Malignant and Benign to know the distribution of data
+  
+  <div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="Boxplot.png" alt="value counts of Malignant and Benign" width="200">
+    </p>
+</div> 
+
+- Histogram of Radius Mean for Benign and Malignant Tumors
+  
+  <div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="Histogram.png" alt="Histogram of Radius Mean for Benign and Malignant Tumors" width="200">
+    </p>
+</div> 
+
+- Box Plot of Radius Mean and Texture Mean for Benign and Malignant Tumors
+
+<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="Boxplot_Radiusmean&Texturemean.png" alt="Box Plot of Radius Mean and Texture Mean" width="200">
+    </p>
+</div> 
+ 
+- violin Plot of for first 10 rows to know more about the data
+
+<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="violinplot.png" alt="violin Plot of for first 10 rows" width="200">
+    </p>
+</div> 
