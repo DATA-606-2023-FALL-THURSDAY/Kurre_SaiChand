@@ -70,7 +70,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Boxplot.png" alt="value counts of Malignant and Benign" width="200">
+    <img src="Boxplot.png" alt="value counts of Malignant and Benign" width="500">
     </p>
 </div> 
 
@@ -80,7 +80,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Histogram.png" alt="Histogram of Radius Mean for Benign and Malignant Tumors" width="200">
+    <img src="Histogram.png" alt="Histogram of Radius Mean for Benign and Malignant Tumors" width="500">
     </p>
 </div> 
 
@@ -90,7 +90,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Boxplot_Radiusmean&Texturemean.png" alt="Box Plot of Radius Mean and Texture Mean" width="200">
+    <img src="Boxplot_Radiusmean&Texturemean.png" alt="Box Plot of Radius Mean and Texture Mean" width="500">
     </p>
 </div> 
  
@@ -100,6 +100,6 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="violinplot.png" alt="violin Plot of for first 10 rows" width="200">
+    <img src="violinplot.png" alt="violin Plot of for first 10 rows" width="500">
     </p>
 </div> 
