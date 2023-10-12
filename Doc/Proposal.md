@@ -1,4 +1,4 @@
-# <p align ="center"> Breast Cancer Predection </p>
+# <p align ="center"> Breast Cancer Prediction </p>
 ##  Title and Author
 - Project Title - **Breast Cancer Predection**
 - Prepared for UMBC Data Science Master Degree Capstone by **Dr Chaojie (Jay) Wang**
