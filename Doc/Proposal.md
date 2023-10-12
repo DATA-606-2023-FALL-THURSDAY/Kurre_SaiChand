@@ -29,11 +29,11 @@
     </p>
 </div> 
 
-- **Why Does it Matter?**
+**Why Does it Matter?**
 - For Early Detection and treatment which helps in increasing the survival rates and less aggressive treatment methods can be applied.
 - Prevention and the risk reduction and targeted screening programs for high-risk populations might reduce the death rate.
 
-- **Research questions?**
+**Research questions?**
 - Can we develop a predictive model that accurately classifies tumors as malignant (M) or benign (B) based on the given features (radius_mean, texture_mean, perimeter_mean, etc.)?
 - Are there any strong correlations between pairs of features?
 
