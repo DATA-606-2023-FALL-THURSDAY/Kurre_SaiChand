@@ -28,9 +28,10 @@
     <img src="CancerFacts.jpg" alt="Facts About Cancer" width="400">
     </p>
 </div> 
-- **Why does it matter?** 
-- 1 For Early Detection and treatment which helps in increasing the survival rates and less aggressive treatment methods can be applied.
-- 2 Prevention and the risk reduction and targeted screening programs for high-risk populations might reduce the death rate.
+
+- **Why Does it Matter?**
+- For Early Detection and treatment which helps in increasing the survival rates and less aggressive treatment methods can be applied.
+- Prevention and the risk reduction and targeted screening programs for high-risk populations might reduce the death rate.
 
 - **Research questions?**
 - Can we develop a predictive model that accurately classifies tumors as malignant (M) or benign (B) based on the given features (radius_mean, texture_mean, perimeter_mean, etc.)?
@@ -83,26 +84,26 @@
 ## Feature Engineering
 -	Replace the values in the 'diagnosis' column to numerical labels.'Benign' is replaced with 0 and 'Malignant' is replaced with 1.
 -	Generate meta data, This purpose is to provide a summary of important information about the columns in a given DataFrame. This summary aids in comprehending the dataset's structure and characteristics.
--	**Scaling**
--	feature scaling itself does not directly prevent overfitting, it plays a crucial role in maintaining consistency between the training and testing datasets, improving model stability, and influencing the regularization process. These factors collectively contribute to creating models that are less prone to overfitting, leading to better generalization to unseen data.
+	### Scaling
+	- feature scaling itself does not directly prevent overfitting, it plays a crucial role in maintaining consistency between the training and testing datasets, improving model stability, and influencing the regularization process. These factors collectively contribute to creating models that are less prone to overfitting, leading to better generalization to unseen data.
   ### Normalization
-  -	Normalization is a statistical and machine learning data preprocessing technique that rescales numerical variables to a standard range. Normalization is the process of transforming a dataset's features to have a similar scale. This is important in various machine learning algorithms because it ensures that no single feature dominates due to its larger scale, thereby preventing biases in the model's learning process.
+ - Normalization is a statistical and machine learning data preprocessing technique that rescales numerical variables to a standard range. Normalization is the process of transforming a dataset's features to have a similar scale. This is important in various machine learning algorithms because it ensures that no single feature dominates due to its larger scale, thereby preventing biases in the model's learning process.
   -	Normalization methods vary, but one popular approach is Min-Max normalization, which scales the data to a fixed range, typically [0, 1]. The following is how Min-Max normalization works:
 	-	1. Find the minimum (min) and maximum (max) values of the feature to be normalized.
 	-	2. For each value in the feature, apply the following formula: normalized_value = (original_value - min)/(max - min)
 	-	3. Using this formula, the original values are scaled between 0 and 1. If the original value is the minimum value, the normalized value is zero; if it is the maximum value, the normalized value is one.
-	###	Standardization
-	-	Standardization is another data preprocessing technique used in machine learning and statistics. In contrast to normalization, standardization rescales features to have the properties of a standard normal distribution with a mean of 0 and a standard deviation of 1. This is also known as z-score normalization or standardization.
+  ### Standardization
+	- Standardization is another data preprocessing technique used in machine learning and statistics. In contrast to normalization, standardization rescales features to have the properties of a standard normal distribution with a mean of 0 and a standard deviation of 1. This is also known as z-score normalization or standardization.
 	-	1. Calculate the mean (μ) and standard deviation (σ) of the feature.
 	-	2. For each value in the feature, apply the following formula: Standardized_value = (original_value - μ)/σ
 	-	3. he original values are scaled based on how far they deviate from the mean in this formula. A positive standardized value indicates that the original value is greater than the mean, whereas a negative value indicates that the original value is less than the mean.
 	
-	### Principle Component Analysis
+### Principle Component Analysis
 	- Principal Component Analysis (PCA) is a technique for reducing dimensionality that is widely used in machine learning and data analysis. Its main goal is to keep as much information as possible while reducing the number of features (or dimensions) in a dataset. The original features are transformed into a new set of uncorrelated features known as principal components by PCA. These principal components are orthogonal to each other and are linear combinations of the original features.
 	-	1. Variance: PCA seeks to maximize data variance along the new dimensions. High variance indicates that the data points are dispersed and provide useful information.
 	-	2. Orthogonality: The primary components are orthogonal, which means they are uncorrelated. This ensures that the new features capture a variety of data aspects.
 	-	3. Eigenvalues and Eigenvectors:PCA entails determining the eigenvalues and eigenvectors of the original data's covariance matrix. Eigenvalues represent the amount of variance explained by each principal component, whereas eigenvectors represent the component's direction in the original feature space.
-		#### Advantages of PCA:
+#### Advantages of PCA:
 		- 1. Dimensionality Reduction
 		- 2. Noise Reduction
 		- 3. Visualization
@@ -115,14 +116,14 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="ScreePlot.png" alt="Pca Variance" width="600">
+    <img src="ScreePlot.png" alt="Pca Variance" width="700">
     </p>
 </div> 
 <div style="display: flex; align-items: center;">
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Cumulative_variance.png" alt="Pca Variance" width="600">
+    <img src="Cumulative_variance.png" alt="Pca Variance" width="700">
     </p>
 </div>
 	- After PCA the	Selected Columns are : ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']
@@ -134,7 +135,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Boxplot.png" alt="value counts of Malignant and Benign" width="500">
+    <img src="Boxplot.png" alt="value counts of Malignant and Benign" width="700">
     </p>
 </div> 
 
@@ -144,7 +145,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Histogram.png" alt="Histogram of Radius Mean for Benign and Malignant Tumors" width="500">
+    <img src="Histogram.png" alt="Histogram of Radius Mean for Benign and Malignant Tumors" width="700">
     </p>
 </div> 
 
@@ -154,7 +155,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="HistogramSmoothness.png" alt="Histogram of smoothness Mean for Benign and Malignant Tumors" width="500">
+    <img src="HistogramSmoothness.png" alt="Histogram of smoothness Mean for Benign and Malignant Tumors" width="700">
     </p>
 </div> 
 
@@ -165,7 +166,7 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Boxplot_Radiusmean&Texturemean.png" alt="Box Plot of Radius Mean and Texture Mean" width="500">
+    <img src="Boxplot_Radiusmean&Texturemean.png" alt="Box Plot of Radius Mean and Texture Mean" width="700">
     </p>
 </div> 
  
@@ -185,6 +186,6 @@
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="Heatmap.png" alt="H" width="500">
+    <img src="Heatmap.png" alt="H" width="700">
     </p>
 </div> 
