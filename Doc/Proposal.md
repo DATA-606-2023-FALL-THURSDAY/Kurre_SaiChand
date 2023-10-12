@@ -94,9 +94,9 @@
 	-	3. Using this formula, the original values are scaled between 0 and 1. If the original value is the minimum value, the normalized value is zero; if it is the maximum value, the normalized value is one.
   ### Standardization
 	- Standardization is another data preprocessing technique used in machine learning and statistics. In contrast to normalization, standardization rescales features to have the properties of a standard normal distribution with a mean of 0 and a standard deviation of 1. This is also known as z-score normalization or standardization.
-	-	1. Calculate the mean (μ) and standard deviation (σ) of the feature.
-	-	2. For each value in the feature, apply the following formula: Standardized_value = (original_value - μ)/σ
-	-	3. he original values are scaled based on how far they deviate from the mean in this formula. A positive standardized value indicates that the original value is greater than the mean, whereas a negative value indicates that the original value is less than the mean.
+- Calculate the mean (μ) and standard deviation (σ) of the feature.
+- For each value in the feature, apply the following formula: Standardized_value = (original_value - μ)/σ
+- he original values are scaled based on how far they deviate from the mean in this formula. A positive standardized value indicates that the original value is greater than the mean, whereas a negative value indicates that the original value is less than the mean.
 	
 ### Principle Component Analysis
 - Principal Component Analysis (PCA) is a technique for reducing dimensionality that is widely used in machine learning and data analysis. Its main goal is to keep as much information as possible while reducing the number of features (or dimensions) in a dataset. The original features are transformed into a new set of uncorrelated features known as principal components by PCA. These principal components are orthogonal to each other and are linear combinations of the original features.
