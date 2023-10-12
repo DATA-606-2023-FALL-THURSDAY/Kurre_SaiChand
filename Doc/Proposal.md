@@ -28,9 +28,15 @@
     <img src="CancerFacts.jpg" alt="Facts About Cancer" width="400">
     </p>
 </div> 
+- **Why does it matter?** 
+- 1 For Early Detection and treatment which helps in increasing the survival rates and less aggressive treatment methods can be applied.
+- 2 Prevention and the risk reduction and targeted screening programs for high-risk populations might reduce the death rate.
 
+- **Research questions?**
 - Can we develop a predictive model that accurately classifies tumors as malignant (M) or benign (B) based on the given features (radius_mean, texture_mean, perimeter_mean, etc.)?
 - Are there any strong correlations between pairs of features?
+
+
 
 ## Data
 - **Data Source** : The data is found from UCI Machine Learning Repository https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
@@ -54,16 +60,74 @@
 - The mean, standard error and "worst" or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 columns.
 - id is of datatype int64, diagnosis is of data type object and the rest of other 30 parameters are of Float64.
 - **Target For ML Model** : Diagnosis
-## 4. Exploratory Data Analysis (EDA)
- ### 4.1 Data Cleaning 
-  #### 4.1.1 Dropping the unwanted columns
-- In the DataFrame we have 1 columns they are Unnamed: 32.  
-- Unnamed: 32 is the unwanted columns so that is deleted.
+## Potential Features/Predictors
+- All columns except the target variable may have potential to be utilised as feature columns in machine learning models.
+## Exploratory Data Analysis (EDA)
+- **Import Libraries**
+  - Imported all thenecessary libraries such as  pandas, matplotlib, seaborn, plotly, and numpy.
+  
+- **Loading Data_set**
+  - loaded the dataset which is in csv format into the jupyter Notebook as df, as data frame.
+   
+- **Cleaning Data**
+	- knowing the datatypes 
+	- knowing the shape of data
+	- knowing all the column names
+	- knowing the stastistical details about our data
+	- Checking the null values
+	- Deleting unwanted columns(Unnamed: 32 is the empty columns so that is deleted).
+	- Checking whether any rows or columns are identical (no two columns or rows have same value)
+	- Checking the number of categeorical values (there are 2 categorical values Bengin and melanin)
 
-#### 4.1.2 Checking & removing the duplicate rows from DataFrame
-- We have checked whether any 2 columns have the same value but there are none. Checking the duplicate rows in the DataFrame. It is observed that there are no multiple rows
-
- ### 4.2 visualization
+ 
+## Feature Engineering
+-	Replace the values in the 'diagnosis' column to numerical labels.'Benign' is replaced with 0 and 'Malignant' is replaced with 1.
+-	Generate meta data, This purpose is to provide a summary of important information about the columns in a given DataFrame. This summary aids in comprehending the dataset's structure and characteristics.
+-	**Scaling**
+-	feature scaling itself does not directly prevent overfitting, it plays a crucial role in maintaining consistency between the training and testing datasets, improving model stability, and influencing the regularization process. These factors collectively contribute to creating models that are less prone to overfitting, leading to better generalization to unseen data.
+  ### Normalization
+  -	Normalization is a statistical and machine learning data preprocessing technique that rescales numerical variables to a standard range. Normalization is the process of transforming a dataset's features to have a similar scale. This is important in various machine learning algorithms because it ensures that no single feature dominates due to its larger scale, thereby preventing biases in the model's learning process.
+  -	Normalization methods vary, but one popular approach is Min-Max normalization, which scales the data to a fixed range, typically [0, 1]. The following is how Min-Max normalization works:
+	-	1. Find the minimum (min) and maximum (max) values of the feature to be normalized.
+	-	2. For each value in the feature, apply the following formula: normalized_value = (original_value - min)/(max - min)
+	-	3. Using this formula, the original values are scaled between 0 and 1. If the original value is the minimum value, the normalized value is zero; if it is the maximum value, the normalized value is one.
+	###	Standardization
+	-	Standardization is another data preprocessing technique used in machine learning and statistics. In contrast to normalization, standardization rescales features to have the properties of a standard normal distribution with a mean of 0 and a standard deviation of 1. This is also known as z-score normalization or standardization.
+	-	1. Calculate the mean (μ) and standard deviation (σ) of the feature.
+	-	2. For each value in the feature, apply the following formula: Standardized_value = (original_value - μ)/σ
+	-	3. he original values are scaled based on how far they deviate from the mean in this formula. A positive standardized value indicates that the original value is greater than the mean, whereas a negative value indicates that the original value is less than the mean.
+	
+	### Principle Component Analysis
+	- Principal Component Analysis (PCA) is a technique for reducing dimensionality that is widely used in machine learning and data analysis. Its main goal is to keep as much information as possible while reducing the number of features (or dimensions) in a dataset. The original features are transformed into a new set of uncorrelated features known as principal components by PCA. These principal components are orthogonal to each other and are linear combinations of the original features.
+	-	1. Variance: PCA seeks to maximize data variance along the new dimensions. High variance indicates that the data points are dispersed and provide useful information.
+	-	2. Orthogonality: The primary components are orthogonal, which means they are uncorrelated. This ensures that the new features capture a variety of data aspects.
+	-	3. Eigenvalues and Eigenvectors:PCA entails determining the eigenvalues and eigenvectors of the original data's covariance matrix. Eigenvalues represent the amount of variance explained by each principal component, whereas eigenvectors represent the component's direction in the original feature space.
+		#### Advantages of PCA:
+		- 1. Dimensionality Reduction
+		- 2. Noise Reduction
+		- 3. Visualization
+	- Split the DataFrame into X (features) and y (target) and Initialize PCA with the specified number of components.
+	- Fit PCA on the feature matrix (X) and gets the principle components and then Creates a DataFrame to store the principal components.
+	- Initializes a dictionary to store top features for each principal component and Loop through each principal component then Select the top 'top_n' features.
+	- Next, Creates a list of selected features by combining top features from all principal components and Calculates PCA variance explained and cumulative variance explained.
+	- Plotting for both PCA variance and cumulative variance and the Creates a new DataFrame with selected features and the target column.
+	<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="ScreePlot.png" alt="Pca Variance" width="600">
+    </p>
+</div> 
+<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="Cumulative_variance.png" alt="Pca Variance" width="600">
+    </p>
+</div>
+	- After PCA the	Selected Columns are : ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']
+	
+### visualization
 - Box Plot for value counts of Malignant and Benign to know the distribution of data
   
   <div style="display: flex; align-items: center;">
@@ -84,6 +148,17 @@
     </p>
 </div> 
 
+- Histogram of Smoothness Mean for Benign and Malignant Tumors
+  
+  <div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="HistogramSmoothness.png" alt="Histogram of smoothness Mean for Benign and Malignant Tumors" width="500">
+    </p>
+</div> 
+
+
 - Box Plot of Radius Mean and Texture Mean for Benign and Malignant Tumors
 
 <div style="display: flex; align-items: center;">
@@ -101,5 +176,15 @@
   <div style="flex: 1;">
     <p align="center">
     <img src="violinplot.png" alt="violin Plot of for first 10 rows" width="500">
+    </p>
+</div> 
+
+- Heat map for our final data
+
+<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="Heatmap.png" alt="H" width="500">
     </p>
 </div> 
