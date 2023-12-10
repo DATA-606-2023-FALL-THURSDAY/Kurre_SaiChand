@@ -107,6 +107,8 @@
 	- 1. Dimensionality Reduction
 	- 2. Noise Reduction
 	- 3. Visualization
+	
+	
 	- Split the DataFrame into X (features) and y (target) and Initialize PCA with the specified number of components.
 	- Fit PCA on the feature matrix (X) and gets the principle components and then Creates a DataFrame to store the principal components.
 	- Initializes a dictionary to store top features for each principal component and Loop through each principal component then Select the top 'top_n' features.
@@ -126,10 +128,10 @@
     <img src="Cumulative_variance.png" alt="Pca Variance" width="700">
     </p>
 </div>
-	- After PCA the	Selected Columns are : ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']
+	- **After PCA the	Selected Columns are : ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']**
 	
-### Visualizations
-- Box Plot for value counts of Malignant and Benign to know the distribution of data
+## Visualizations
+- **Box Plot for value counts of Malignant and Benign to know the distribution of data**
   
   <div style="display: flex; align-items: center;">
   </div>
@@ -139,7 +141,7 @@
     </p>
 </div> 
 
-- Histogram of Radius Mean for Benign and Malignant Tumors
+- **Histogram of Radius Mean for Benign and Malignant Tumors**
   
   <div style="display: flex; align-items: center;">
   </div>
@@ -149,7 +151,7 @@
     </p>
 </div> 
 
-- Histogram of Smoothness Mean for Benign and Malignant Tumors
+- **Histogram of Smoothness Mean for Benign and Malignant Tumors**
   
   <div style="display: flex; align-items: center;">
   </div>
@@ -160,7 +162,7 @@
 </div> 
 
 
-- Box Plot of Radius Mean and Texture Mean for Benign and Malignant Tumors
+- **Box Plot of Radius Mean and Texture Mean for Benign and Malignant Tumors**
 
 <div style="display: flex; align-items: center;">
   </div>
@@ -170,7 +172,7 @@
     </p>
 </div> 
  
-- violin Plot of for first 10 rows to know more about the data
+- **Violin Plot of for first 10 rows to know more about the data**
 
 <div style="display: flex; align-items: center;">
   </div>
@@ -180,7 +182,7 @@
     </p>
 </div> 
 
-- Heat map for our final data
+- **Heat map for our final data**
 
 <div style="display: flex; align-items: center;">
   </div>
