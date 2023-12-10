@@ -105,7 +105,7 @@
 	1. Dimensionality Reduction
 	2. Noise Reduction
 	3. Visualization
-	<br />                                                                                                            
+	                                                                                                           
 	- Split the DataFrame into X (features) and y (target) and Initialize PCA with the specified number of components.
 	- Fit PCA on the feature matrix (X) and gets the principle components and then Creates a DataFrame to store the principal components.
 	- Initializes a dictionary to store top features for each principal component and Loop through each principal component then Select the top 'top_n' features.
