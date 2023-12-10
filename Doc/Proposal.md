@@ -125,7 +125,7 @@
     <img src="Cumulative_variance.png" alt="Pca Variance" width="700">
     </p>
 </div>
--	**After PCA the Selected Columns are :** ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']
+After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']
 	
 ## Visualizations
 - **Box Plot for value counts of Malignant and Benign to know the distribution of data**
