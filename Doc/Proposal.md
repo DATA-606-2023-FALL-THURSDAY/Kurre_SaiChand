@@ -105,7 +105,7 @@
 	1. Dimensionality Reduction
 	2. Noise Reduction
 	3. Visualization
-	                                                                                                           
+	                                                                                                                         
 	- Split the DataFrame into X (features) and y (target) and Initialize PCA with the specified number of components.
 	- Fit PCA on the feature matrix (X) and gets the principle components and then Creates a DataFrame to store the principal components.
 	- Initializes a dictionary to store top features for each principal component and Loop through each principal component then Select the top 'top_n' features.
@@ -125,7 +125,7 @@
     <img src="Cumulative_variance.png" alt="Pca Variance" width="700">
     </p>
 </div>
-	- **After PCA the	Selected Columns are : ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']**
+	- **After PCA the	Selected Columns are :** ['symmetry_worst', 'concave points_mean', 'texture_worst', 'fractal_dimension_mean', 'fractal_dimension_worst', 'concavity_se', 'texture_se', 'smoothness_mean', 'smoothness_se', 'symmetry_mean']
 	
 ## Visualizations
 - **Box Plot for value counts of Malignant and Benign to know the distribution of data**
