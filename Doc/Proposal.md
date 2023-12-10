@@ -100,13 +100,13 @@
 	
 	### Principle Component Analysis
 	- Principal Component Analysis (PCA) is a dimensionality reduction technique widely used in machine learning and data analysis. Its primary goal is to retain as much information as possible while minimizing the number of features (or dimensions) in a dataset. PCA transforms the original features into a new set of uncorrelated features known as principal components. These main elements are orthogonal to one another and are linear combinations of the original features.
-	- 1. Variance: PCA seeks to maximize data variance along the new dimensions. High variance indicates that the data points are dispersed and provide useful information.
-	- 2. Orthogonality: The primary components are orthogonal, which means they are uncorrelated. This ensures that the new features capture a variety of data aspects.
-	- 3. Eigenvalues and Eigenvectors:PCA entails determining the eigenvalues and eigenvectors of the original data's covariance matrix. Eigenvalues represent the amount of variance explained by each principal component, whereas eigenvectors represent the component's direction in the original feature space.
+	1. Variance: PCA seeks to maximize data variance along the new dimensions. High variance indicates that the data points are dispersed and provide useful information.
+	2. Orthogonality: The primary components are orthogonal, which means they are uncorrelated. This ensures that the new features capture a variety of data aspects.
+	3. Eigenvalues and Eigenvectors:PCA entails determining the eigenvalues and eigenvectors of the original data's covariance matrix. Eigenvalues represent the amount of variance explained by each principal component, whereas eigenvectors represent the component's direction in the original feature space.
 	#### Advantages of PCA:
-	- 1. Dimensionality Reduction
-	- 2. Noise Reduction
-	- 3. Visualization
+	1. Dimensionality Reduction
+	2. Noise Reduction
+	3. Visualization
 	
 	
 	- Split the DataFrame into X (features) and y (target) and Initialize PCA with the specified number of components.
