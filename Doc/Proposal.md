@@ -37,8 +37,6 @@
 - Can we create a predictive model that accurately classifies tumors as malignant (M) or benign (B) based on the features provided (radius_mean, texture_mean, perimeter_mean, and so on)?
 - Is there any evidence of strong correlations between features?
 
-
-
 ## Data
 - **Data Source** : The data is found from UCI Machine Learning Repository https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
 - **Data Size** : size of our data is 128 KB
@@ -89,9 +87,9 @@
 	### Normalization
 	- Normalization is a data preprocessing technique used in statistics and machine learning that rescales numerical variables to a standard range. The process of transforming the features of a dataset to have a similar scale is known as normalization. This is important in various machine learning algorithms because it ensures that no single feature dominates due to its larger scale, preventing biases in the learning process of the model.
 	-	Normalization methods vary, but Min-Max normalization is a popular approach that scales the data to a fixed range, typically [0, 1]. This is how Min-Max normalization works:
-	-	1. Find the minimum (min) and maximum (max) values of the feature to be normalized.
-	-	2. For each value in the feature, apply the following formula: normalized_value = (original_value - min)/(max - min)
-	-	3. Using this formula, the original values are scaled between 0 and 1. If the original value is the minimum value, the normalized value is zero; if it is the maximum value, the normalized value is one.
+	1. Find the minimum (min) and maximum (max) values of the feature to be normalized.
+	2. For each value in the feature, apply the following formula: normalized_value = (original_value - min)/(max - min)
+	3. Using this formula, the original values are scaled between 0 and 1. If the original value is the minimum value, the normalized value is zero; if it is the maximum value, the normalized value is one.
 	### Standardization
 	- Another data preprocessing technique used in machine learning and statistics is standardization. Standardization, as opposed to normalization, rescales features to have the properties of a standard normal distribution with a mean of 0 and a standard deviation of 1. This is also known as z-score standardization or normalization.
 	- Calculate the mean (μ) and standard deviation (σ) of the feature.
@@ -107,8 +105,7 @@
 	1. Dimensionality Reduction
 	2. Noise Reduction
 	3. Visualization
-	
-	
+	-                                                                                                              
 	- Split the DataFrame into X (features) and y (target) and Initialize PCA with the specified number of components.
 	- Fit PCA on the feature matrix (X) and gets the principle components and then Creates a DataFrame to store the principal components.
 	- Initializes a dictionary to store top features for each principal component and Loop through each principal component then Select the top 'top_n' features.
