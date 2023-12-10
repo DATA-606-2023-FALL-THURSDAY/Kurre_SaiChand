@@ -1,6 +1,6 @@
 # <p align ="center"> Breast Cancer Prediction </p>
 ##  Title and Author
-- Project Title - **Breast Cancer Predection**
+- Project Title - **Breast Cancer Prediction**
 - Prepared for UMBC Data Science Master Degree Capstone by **Dr Chaojie (Jay) Wang**
 - Author - **Kurre Sai Chand**
 - Author's GitHub profile - https://github.com/saichandkurre
