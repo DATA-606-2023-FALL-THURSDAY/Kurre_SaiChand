@@ -197,6 +197,14 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
 
 - This multifaceted collection of algorithms converges on a single goal: to meticulously determine the best predictive model for our cancer dataset. The comparative analysis, anchored in the pursuit of accuracy, will serve as a testing ground for these algorithms, revealing their respective merits and complexities. 
 
+<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="rfc.png" alt="Random Forest Classifier" width="700">
+    </p>
+</div> 
+
 - The dataset, meticulously curated for our cancer prediction endeavor, is partitioned wisely, with 70% of its complexities allocated to the training domain and the remaining 30% reserved for the rigorous crucible of testing.
  
 - We wisely used the sklearn library's formidable arsenal in crafting a strong framework for our machine learning endeavors. The train_test_split function from sklearn.model_selection focuses on optimal data utilization. In order to ensure a harmonious convergence of features within the machine learning models, the StandardScaler from sklearn.preprocessing was enlisted.
@@ -206,6 +214,14 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
 - In the field of support vector classification, the SVC from sklearn.svm demonstrated its prowess in high-dimensional spaces, identifying optimal hyperplanes among the complexities of cancer manifestation. The DecisionTreeClassifier from sklearn.tree's inherently intuitive decision logic was used to decipher underlying decision rules. Meanwhile, the GaussianNB from sklearn.naive_bayes was used for nuanced probabilistic classification while embracing the Gaussian assumption.
 
 - Following model predictions, a meticulous examination of performance was facilitated by the prudent use of metrics obtained from sklearn.metrics. The triumvirate of accuracy_score, classification_report, and confusion_matrix emerged as indispensable companions, providing insights into the accuracy scores, detailed classification reports, and the intricate nuances encapsulated within the confusion matrix.
+
+<div style="display: flex; align-items: center;">
+  </div>
+  <div style="flex: 1;">
+    <p align="center">
+    <img src="ComparingAccuracies.png" alt="All Model Accuracies" width="700">
+    </p>
+</div> 
 
 - My primary development environment is my personal laptop. In addition, I use Google Colab for collaborative projects and when I need access to more computational resources. I also use GitHub CodeSpaces because it integrates seamlessly with version control and collaborative coding. 
 
@@ -222,14 +238,14 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="webpage1.png" alt="Box Plot of Radius Mean and Texture Mean" width="1000">
+    <img src="webpage1.png" alt="Web Page" width="1000">
     </p>
 </div> 
 <div style="display: flex; align-items: center;">
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="webpage2.png" alt="Box Plot of Radius Mean and Texture Mean" width="900">
+    <img src="webpage2.png" alt="Web Page" width="900">
     </p>
 </div> 
 
