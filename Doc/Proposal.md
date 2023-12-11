@@ -203,6 +203,9 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
     <p align="center">
     <img src="rfc.png" alt="Random Forest Classifier" width="700">
     </p>
+	<p align="center">
+      Higest Accuracy is for <b> Random Forest Classifier </b>
+    </p>
 </div> 
 
 - The dataset, meticulously curated for our cancer prediction endeavor, is partitioned wisely, with 70% of its complexities allocated to the training domain and the remaining 30% reserved for the rigorous crucible of testing.
@@ -220,6 +223,9 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
   <div style="flex: 1;">
     <p align="center">
     <img src="ComparingAccuracies.png" alt="All Model Accuracies" width="700">
+    </p>
+	<p align="center">
+      Comparing Accuracies for all 6 Machine Learning Models
     </p>
 </div> 
 
@@ -251,6 +257,9 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
   <div style="flex: 1;">
     <p align="center">
     <img src="webpage2.png" alt="Web Page" width="900">
+    </p>
+	<p align="center">
+      When We Expand Curing Techniques and Suggested Food tab
     </p>
 </div> 
 
