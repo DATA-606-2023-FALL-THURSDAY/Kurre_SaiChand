@@ -222,7 +222,7 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="ComparingAccuracies.png" alt="All Model Accuracies" width="700">
+    <img src="Accuracy.png" alt="All Model Accuracies" width="700">
     </p>
 	<p align="center">
       Comparing Accuracies for all 6 Machine Learning Models
