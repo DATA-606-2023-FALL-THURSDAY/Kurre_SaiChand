@@ -234,13 +234,18 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
 - Our website goes beyond simple diagnostic capabilities to extend a compassionate hand by providing personalized guidance. Users gain access to a wealth of knowledge in addition to predictive insights. The platform recommends tailored treatment methods, allowing individuals to make informed decisions on their road to recovery. Furthermore, a curated list of suggested foods is provided, with the goal of boosting resilience and supplementing the specific needs dictated by the nature of the cancer.
 
 - This comprehensive approach not only bridges the diagnostic gap but also fosters a supportive ecosystem, demonstrating our commitment to providing individuals with the tools and knowledge they need to navigate the complexities of breast cancer. Our Streamlit-powered website is a testament to the seamless integration of advanced technology, medical insights, and compassionate care, paving the way for informed decisions and resilient health outcomes.
+ 
 <div style="display: flex; align-items: center;">
-  </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="webpage1.png" alt="Web Page" width="1000">
+      <img src="webpage1.png" alt="Web Page" width="1000">
     </p>
-</div> 
+    <p align="center">
+      Web Page For Breast Cancer Prediction
+    </p>
+  </div>
+</div>
+
 <div style="display: flex; align-items: center;">
   </div>
   <div style="flex: 1;">
