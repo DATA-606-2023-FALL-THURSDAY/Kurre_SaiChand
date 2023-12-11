@@ -222,14 +222,14 @@ After PCA the Selected Columns are : ['symmetry_worst', 'concave points_mean', '
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="webpage1.png" alt="Box Plot of Radius Mean and Texture Mean" width="400">
+    <img src="webpage1.png" alt="Box Plot of Radius Mean and Texture Mean" width="900">
     </p>
 </div> 
 <div style="display: flex; align-items: center;">
   </div>
   <div style="flex: 1;">
     <p align="center">
-    <img src="webpage2.png" alt="Box Plot of Radius Mean and Texture Mean" width="400">
+    <img src="webpage2.png" alt="Box Plot of Radius Mean and Texture Mean" width="900">
     </p>
 </div> 
 
