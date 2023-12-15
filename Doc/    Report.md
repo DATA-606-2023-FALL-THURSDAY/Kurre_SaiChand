@@ -6,7 +6,7 @@
 - Author's GitHub profile - https://github.com/saichandkurre
 - Author's LinkedIn progile - www.linkedin.com/in/sai-chand-kurre
 - PowerPoint presentation file -
-- YouTube video -
+- YouTube video - https://youtu.be/C6qIER3BTr0
 ##  Background
 <div style="display: flex; align-items: center;">
   </div>
