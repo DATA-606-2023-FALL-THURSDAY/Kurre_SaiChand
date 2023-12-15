@@ -5,7 +5,7 @@
 - Author - **Kurre Sai Chand**
 - Author's GitHub profile - https://github.com/saichandkurre
 - Author's LinkedIn progile - www.linkedin.com/in/sai-chand-kurre
-- PowerPoint presentation file -
+- PowerPoint presentation file - https://github.com/DATA-606-2023-FALL-THURSDAY/Kurre_SaiChand/blob/main/Doc/BreastCancerPrediction_ppt.pptx
 - YouTube video - https://youtu.be/C6qIER3BTr0
 ##  Background
 <div style="display: flex; align-items: center;">
